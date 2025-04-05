@@ -1,1 +1,17 @@
-# lt/3d-gl
+# ls/3d-gl
+
+## Luke's Studio - 3D WebGL Engine
+
+### Description
+
+The plan is to create my own 3D WebGL engine from scratch. The goal is to learn how to create a 3D engine and understand the underlying concepts of 3D graphics programming. This project will be a great opportunity to learn about WebGL, shaders, and 3D rendering techniques.
+
+### TODO
+
+- [ ] Create an NPM package with Hello World function
+- [ ] Create an Astro Starlight template in /docs folders
+- [ ] Publish NPM package
+- [ ] Deploy Astro Starlight template to Vercel
+- [ ] Add documentation to the Astro Starlight template for Hello World function
+- [ ] Point Astro docs to "3d-gl.lukes.studio" domain
+- [ ] Create WebGL initial code with 2D triangle
