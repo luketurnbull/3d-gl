@@ -2,7 +2,7 @@
   "name": "@l-studio/3d-gl",
   "version": "1.0.0",
   "description": "WebGL 3D Engine",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "dev": "astro dev --cwd docs",
