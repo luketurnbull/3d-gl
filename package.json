@@ -1,0 +1,18 @@
+{
+  "name": "@ls/3d-gl",
+  "version": "1.0.0",
+  "description": "WebGL 3D Engine",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "astro dev --cwd docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Luke Turnbull",
+  "license": "ISC",
+  "dependencies": {
+    "@types/webgl2": "^0.0.11",
+    "typescript": "^5.8.3"
+  }
+}
