@@ -1,5 +1,5 @@
 {
-  "name": "@ls/3d-gl",
+  "name": "@l-studio/3d-gl",
   "version": "1.0.0",
   "description": "WebGL 3D Engine",
   "main": "index.js",
