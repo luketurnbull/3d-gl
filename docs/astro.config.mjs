@@ -8,9 +8,9 @@ import vercel from "@astrojs/vercel";
 export default defineConfig({
   integrations: [
     starlight({
-      title: "My Docs",
+      title: "3d-gl",
       social: {
-        github: "https://github.com/withastro/starlight",
+        github: "https://github.com/luketurnbull/3d-gl",
       },
       sidebar: [
         {

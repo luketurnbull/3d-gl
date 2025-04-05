@@ -1,9 +1,9 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: 3d-gl
+description: 3D Engine for WebGL.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: 3D Engine for WebGL
   image:
     file: ../../assets/houston.webp
   actions:
@@ -16,22 +16,20 @@ hero:
       variant: minimal
 ---
 
-import { Card, CardGrid } from "@astrojs/starlight/components";
-import { helloWorld } from "@l-studio/3d-gl";
+import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 
 ## Next steps
 
 <CardGrid stagger>
-  <Card title="Update content" icon="pencil">
-    {helloWorld()}
+  <Card title="Contribute" icon="pencil">
+    Head to [web-3l GitHub](https://github.com/luketurnbull/3d-gl) to
+    contribute.
   </Card>
-  <Card title="Add new content" icon="add-document">
-    Add Markdown or MDX files to `src/content/docs` to create new pages.
-  </Card>
-  <Card title="Configure your site" icon="setting">
-    Edit your `sidebar` and other config in `astro.config.mjs`.
-  </Card>
-  <Card title="Read the docs" icon="open-book">
-    Learn more in [the Starlight Docs](https://starlight.astro.build/).
-  </Card>
+  <LinkCard
+    title="Read the docs"
+    icon="open-book"
+    href="/reference/hello-world"
+  >
+    Learn more
+  </LinkCard>
 </CardGrid>

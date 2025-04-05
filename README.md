@@ -1,4 +1,4 @@
-# ls/3d-gl
+# l-studio/3d-gl
 
 ## Luke's Studio - 3D WebGL Engine
 
@@ -11,7 +11,7 @@ The plan is to create my own 3D WebGL engine from scratch. The goal is to learn 
 - [x] Create an NPM package with Hello World function
 - [x] Create an Astro Starlight template in /docs folders
 - [x] Publish NPM package
-- [ ] Deploy Astro Starlight template to Vercel
-- [ ] Add documentation to the Astro Starlight template for Hello World function
-- [ ] Point Astro docs to "3d-gl.lukes.studio" domain
+- [x] Deploy Astro Starlight template to Vercel
+- [x] Add documentation to the Astro Starlight template for Hello World function
+- [x] Point Astro docs to "3d-gl.lukes.studio" domain
 - [ ] Create WebGL initial code with 2D triangle
