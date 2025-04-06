@@ -1,6 +1,6 @@
 {
   "name": "@l-studio/3d-gl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "WebGL 3D Engine",
   "main": "dist/index.js",
   "scripts": {
