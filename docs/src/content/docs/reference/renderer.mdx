@@ -5,14 +5,33 @@ description: Creating a new renderer
 
 Create a new WebGL renderer with the Renderer class.
 
-This class accepts a `string` which is the id of a canvas element.
+### Usage
 
-#### Usage
+Most simple usage is to pass a `HTMLCanvasElement` to the Renderer class:
 
 ```ts
-const renderer = new Renderer("my-canvas-id");
+const canvas = document.getElementById("my-canvas-id");
+const renderer = new Renderer(canvas);
 ```
 
-import Test from "../../../components/examples/test.astro";
+#### Renderer Options
 
-<Test />
+##### Background color
+
+The default is transparent, but you can override by passing `backgroundColor` in the options object.
+
+`backgroundColor` takes in an instance of `Color`.
+
+This is an example of passing a blue background:
+
+```ts
+const renderer = new Renderer(canvas, {
+   backgroundColor: new Color(1, 0, 0, 1);
+})
+
+renderer.render();
+```
+
+import BlueBackground from "../../../components/examples/renderer/blueBackground.astro";
+
+<BlueBackground />
