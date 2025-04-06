@@ -1,0 +1,45 @@
+---
+title: Quick start
+description: A quick start guide to using the library
+---
+
+# Quick start
+
+## Install
+
+```bash
+npm install @l-studio/3d-gl
+```
+
+## Create a new WebGL renderer
+
+Create a 2D triangle and render it to the screen.
+
+```ts
+import { Renderer, Mesh, Color } from "@l-studio/3d-gl";
+
+const canvas = document.getElementById(
+  "canvas-blue-background"
+) as HTMLCanvasElement;
+const renderer = new Renderer(canvas, {
+  backgroundColor: new Color(0, 0, 1, 1),
+});
+
+const triangle = new Mesh(
+  renderer.gl,
+  new Float32Array([
+    -0.5,
+    -0.5, // bottom left
+    0,
+    0.5, // top middle
+    0.5,
+    -0.5, // bottom right
+  ])
+);
+
+renderer.render(triangle);
+```
+
+import QuickStart from "../../../components/examples/quick-start.astro";
+
+<QuickStart />
