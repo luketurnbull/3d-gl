@@ -1,0 +1,21 @@
+---
+title: Color
+description: Creating a new Color instance
+---
+
+Create a new RGBA color instance
+
+### Usage
+
+Create a color to pass into other objects such as the `Renderer` backgroundColor for WebGL to render.
+
+```ts
+const colorBlue = new Color(0, 0, 1, 1);
+const renderer = new Renderer(canvas, {
+  backgroundColor: colorBlue,
+});
+```
+
+import BlueBackground from "../../../components/examples/renderer/blueBackground.astro";
+
+<BlueBackground />
