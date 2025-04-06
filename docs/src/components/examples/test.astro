@@ -1,0 +1,19 @@
+<canvas id="my-canvas"></canvas>
+
+<script>
+   import { Renderer, Mesh } from '@l-studio/3d-gl';
+
+   const canvasId = "my-canvas"; 
+   const renderer = new Renderer(canvasId);
+
+   console.log(renderer);
+
+   const vertices = new Float32Array([
+       0.0,  0.5,   // Vertex 1 (X, Y)
+      -0.5, -0.5,   // Vertex 2 (X, Y)
+       0.5, -0.5    // Vertex 3 (X, Y)
+   ]);
+
+   const triangleMesh = new Mesh(renderer.gl, vertices);
+   renderer.render(triangleMesh);
+</script>

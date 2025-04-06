@@ -14,4 +14,4 @@ The plan is to create my own 3D WebGL engine from scratch. The goal is to learn 
 - [x] Deploy Astro Starlight template to Vercel
 - [x] Add documentation to the Astro Starlight template for Hello World function
 - [x] Point Astro docs to "3d-gl.lukes.studio" domain
-- [ ] Create WebGL initial code with 2D triangle
+- [x] Create WebGL initial code with 2D triangle

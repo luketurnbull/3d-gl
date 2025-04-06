@@ -5,8 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "astro dev --cwd docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "link": "pnpm build && pnpm link --global"
   },
   "keywords": [],
   "author": "Luke Turnbull",
