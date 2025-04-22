@@ -35,3 +35,36 @@ renderer.render();
 import BlueBackground from "../../../components/examples/renderer/blueBackground.astro";
 
 <BlueBackground />
+
+### Adding meshes
+
+You can add a mesh to the renderer using `addMesh`
+
+`addMesh(mesh: Mesh)`
+
+#### Basic usage
+
+Adding two triangle meshes to the renderer:
+
+```ts
+import { Renderer, Mesh } from "@l-studio/3d-gl";
+
+const canvas = document.getElementById(
+  "two-triangles-canvas"
+) as HTMLCanvasElement;
+const renderer = new Renderer(canvas);
+
+// Bottom triangle
+renderer.addMesh(
+  new Mesh(renderer.gl, new Float32Array([-1, -1, 0, 0, 1, -1]))
+);
+
+// Top triangle
+renderer.addMesh(new Mesh(renderer.gl, new Float32Array([-1, 1, 0, 0, 1, 1])));
+
+renderer.render();
+```
+
+import TwoTriangles from "../../../components/examples/renderer/twoTriangles.astro";
+
+<TwoTriangles />

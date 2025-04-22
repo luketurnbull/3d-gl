@@ -1,12 +1,21 @@
 <canvas id="canvas-blue-background"></canvas>
 
 <script>
-   import { Renderer, Mesh, Color } from '@l-studio/3d-gl';
+   import { Renderer, Mesh, Color, type Matrix } from '@l-studio/3d-gl';
 
    const canvas = document.getElementById('canvas-blue-background') as HTMLCanvasElement;
    const renderer = new Renderer(canvas, {
       backgroundColor: new Color(0, 0, 1, 1)
    });
+
+   const identityMatrix: Matrix = [
+      [1, 0, 0, 0],
+      [0, 1, 0, 0],
+      [0, 0, 1, 0],
+      [0, 0, 0, 1]
+   ];
+
+
 
    const triangle = new Mesh(renderer.gl, new Float32Array([
       -0.5, -0.5, // bottom left
@@ -14,5 +23,6 @@
       0.5, -0.5 // bottom right
    ]))
 
-   renderer.render(triangle);
+   renderer.addMesh(triangle);
+   renderer.render();
 </script>

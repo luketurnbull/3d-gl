@@ -15,8 +15,8 @@ importers:
         specifier: ^8.1.3
         version: 8.1.3(astro@5.6.1(rollup@4.39.0)(typescript@5.8.3))(rollup@4.39.0)
       '@l-studio/3d-gl':
-        specifier: ^1.0.2
-        version: 1.0.2
+        specifier: link:../
+        version: link:..
       astro:
         specifier: ^5.5.3
         version: 5.6.1(rollup@4.39.0)(typescript@5.8.3)
@@ -368,9 +368,6 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
-  '@l-studio/3d-gl@1.0.2':
-    resolution: {integrity: sha512-3vV6tA21KoT9hEWGU1A9kNldhVZbt0dPkylTQcdL/543d6aLHn5W8r4ev7NB6i3a4XxCcxYw0y10N4ARVLrtrg==}
-
   '@mapbox/node-pre-gyp@2.0.0':
     resolution: {integrity: sha512-llMXd39jtP0HpQLVI37Bf1m2ADlEb35GYSh1SDSLsBhR+5iCxiNGlT31yqbNtVHygHAtMy6dWFERpU2JgufhPg==}
     engines: {node: '>=18'}
@@ -600,9 +597,6 @@ packages:
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
-
-  '@types/webgl2@0.0.11':
-    resolution: {integrity: sha512-LFa4je4lUbqDVRNeC2W1ZRM8dOgsGsm23MZO7m/EllCVg07yB65W3eUF4MAM+0LU9X6x/0NTrvXxAW0pmipNdw==}
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
@@ -2484,11 +2478,6 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
-  '@l-studio/3d-gl@1.0.2':
-    dependencies:
-      '@types/webgl2': 0.0.11
-      typescript: 5.8.3
-
   '@mapbox/node-pre-gyp@2.0.0':
     dependencies:
       consola: 3.4.2
@@ -2725,8 +2714,6 @@ snapshots:
   '@types/unist@2.0.11': {}
 
   '@types/unist@3.0.3': {}
-
-  '@types/webgl2@0.0.11': {}
 
   '@ungap/structured-clone@1.3.0': {}
 

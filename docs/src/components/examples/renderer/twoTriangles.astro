@@ -1,0 +1,24 @@
+<canvas id="two-triangles-canvas"></canvas>
+
+<script>
+   import { Renderer, Mesh } from "@l-studio/3d-gl"
+
+   const canvas = document.getElementById("two-triangles-canvas") as HTMLCanvasElement;
+   const renderer = new Renderer(canvas);
+
+   // Bottom triangle
+   renderer.addMesh(new Mesh(renderer.gl, new Float32Array([
+      -1, -1, 
+      0, 0,
+      1, -1.
+   ])));
+   
+   // Top triangle
+   renderer.addMesh(new Mesh(renderer.gl, new Float32Array([
+      -1, 1, 
+      0, 0,
+      1, 1.
+   ])));
+
+   renderer.render();
+</script>

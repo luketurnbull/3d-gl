@@ -13,6 +13,7 @@ export class Renderer {
   public gl: WebGL2RenderingContext;
   private shader: Shader;
   private backgroundColor: Color;
+  private meshes: Mesh[] = [];
 
   constructor(canvas: HTMLCanvasElement, options?: RendererOptions) {
     this.canvas = canvas;
@@ -46,9 +47,16 @@ export class Renderer {
     this.gl.clear(this.gl.COLOR_BUFFER_BIT);
   }
 
-  public render(mesh: Mesh) {
+  public addMesh(mesh: Mesh) {
+    this.meshes.push(mesh);
+  }
+
+  public render() {
     this.gl.clear(this.gl.COLOR_BUFFER_BIT);
     this.shader.use();
-    mesh.draw(this.gl, this.shader);
+
+    this.meshes.forEach((mesh: Mesh) => {
+      mesh.draw(this.gl, this.shader);
+    });
   }
 }

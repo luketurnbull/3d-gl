@@ -1,12 +1,12 @@
 <canvas id="canvas-blue-background"></canvas>
 
 <script>
-   import { Renderer, Mesh, Color } from '@l-studio/3d-gl';
+   import { Renderer, Color } from '@l-studio/3d-gl';
 
    const canvas = document.getElementById('canvas-blue-background') as HTMLCanvasElement;
    const renderer = new Renderer(canvas, {
       backgroundColor: new Color(0, 0, 1, 1)
    });
 
-   renderer.render(new Mesh(renderer.gl, new Float32Array([])));
+   renderer.render();
 </script>
